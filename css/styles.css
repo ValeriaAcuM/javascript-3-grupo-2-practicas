@@ -1,0 +1,19 @@
+.img_dad {
+  width: 20%;
+  margin-bottom: 15px;
+}
+
+.show_container {
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-top: 1%;
+}
+
+input {
+  padding: 7px;
+}
