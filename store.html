@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/store.css">
+  <title>Dad Jokes</title>
+</head>
+
+<body>
+  <div class="container_Img">
+    <img src="./img/store_products/product-shirt-black.jpg" class="main_img imgMain" id="mainImage" alt="">
+  </div>
+
+  <div class="color_select">
+    <button id="black"></button>
+    <button id="white"></button>
+  </div>
+
+  <div class="container_InfoProduct">
+    <h1 id="title"></h1>
+    <h1 id="nombreSeleccionado"></h1>
+    <span id="price">$</span>
+  </div>
+
+  <div class="show_containerJoke">
+    <h2>Choose another joke!</h2>
+    <div class="show_joke" id="show_joke"></div>
+    <button id="get_btn">Get another joke!</button>
+  </div>
+
+  <section>
+    <h3 class="products_title">Choose another product:</h3>
+    <div class="container_products" id="selectImagenes">
+      <img class="products_img" src="./img/store_products/product-shirt-black.jpg" id="img_shirt" alt="">
+      <img class="products_img" src="./img/store_products/product-pillow-black.jpg" id="img_pillow" alt="">
+      <img class="products_img" src="./img/store_products/product-poster-black.jpeg" id="img_poster" alt="">
+      <img class="products_img" src="./img/store_products/product-case-black.jpg" id="img_case" alt="">
+    </div>
+  </section>
+
+</body>
+
+<script type="module" src="javascript/mainStore.js"></script>
+
+</html>
