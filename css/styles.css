@@ -1,0 +1,77 @@
+button {
+  cursor: pointer;
+}
+
+.myAccount-container {
+  background-color: black;
+  position: relative;
+  padding-top: 20px;
+}
+
+.btn__myAccount {
+  color: aliceblue;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  width: 100px;
+}
+
+.btn__backEvents {
+  color: aliceblue;
+  text-decoration: none;
+  position: absolute;
+}
+
+.tab {
+  display: none;
+}
+
+.tabs-container {
+  background-color: black;
+  padding: 3%;
+}
+
+.tablinks {
+  margin-left: 10%;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.panels {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.panels__img {
+  max-width: 100%;
+  height: 150px;
+}
+
+.panels__title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.panels__date {
+  margin-top: 5px;
+}
+
+.panels__location {
+  margin-top: 5px;
+}
+
+.panels__price {
+  margin-top: 5px;
+}
+
+.panels__interested {
+  border-color: cadetblue;
+}
+
+.panels__going {
+  background-color: cadetblue;
+}
