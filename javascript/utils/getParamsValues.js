@@ -4,4 +4,4 @@ async function getJokeId() {
   return id;
 }
 
-export { getJokeId }
+export { getJokeId } 

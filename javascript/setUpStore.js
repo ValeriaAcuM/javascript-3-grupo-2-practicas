@@ -1,18 +1,16 @@
 import { getJoke } from "./modules/randomJoke.js";
-import { setupColorSelector } from "./modules/colorChange.js"
-import Imagen from "./modules/products.js";
+import initColor from "./config/color.js";
+import initProduct from "./config/details.js";
+import { initRandomJokeComponent } from "./modules/randomJoke.js";
+import { initDetails } from "./modules/detailProduct.js";
+initDetails();
+initRandomJokeComponent();
+initColor();
+initProduct();
 
 const init = () => {
-  //// JOKES ////
   const getJokeBtn = document.querySelector("#get_btn");
   getJokeBtn.addEventListener("click", getJoke);
-
-  //// COLOR CHANGE ////
-  const colorBlack = document.getElementById("black");
-  const colorWhite = document.getElementById("white");
-
-  colorBlack.addEventListener("click", setupColorSelector);
-  colorWhite.addEventListener("click", setupColorSelector);
 }
 
 export default init;

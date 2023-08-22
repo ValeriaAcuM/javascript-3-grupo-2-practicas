@@ -53,7 +53,7 @@ async function getJokeById(id) {
     return;
   }
 
-  return fetch(`${apiUrl}j/${id}`, {
+  return fetch(`${apiRandomJokeURL}j/${id}`, {
     headers: headers,
   })
     .then((response) => response.json())
