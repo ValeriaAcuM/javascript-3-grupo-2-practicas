@@ -1,6 +1,6 @@
 import Publisher from "./publisher.js";
 import state from "../source/default.js";
-/* import products from "../source/config.js"; */
+import products from "../source/config.js";
 
 const colorChange = new Publisher();
 
@@ -21,8 +21,8 @@ function mainImageColorChange(color) {
   imgColorProducts.setAttribute("src", `/img/product-${state.product}-${color}.jpg`);
   const title = document.getElementById('title');
   title.innerHTML = `${color} ${state.product} with joke`;
-  /* const price = document.getElementById('price');
-  price.innerHTML = `${state.color} `; */
+  const price = document.getElementById('price');
+  price.innerHTML = products[state.product][color];
   state.color = color;
 };
 

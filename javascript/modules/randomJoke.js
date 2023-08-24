@@ -5,14 +5,19 @@ const jokeChange = new Publisher('joke.change');
 
 
 async function renderRandomJoke() {
-  const jokeData = await getRandomJoke(); 
-  const { joke } = joke;
+  const jokeData= await getRandomJoke(); 
+  console.log("jokeData:", jokeData);
+
+  const { joke } = jokeData;
+  console.log("joke:", joke); // SALE NULL
+
   const randomJokeElement = document.getElementById('show_joke');
-  randomJokeElement.textContent = joke;
+  randomJokeElement.innerHTML = joke;
   jokeChange.publish(joke);
 }
 
 const initRandomJokeComponent = () => {
+  console.log("initRandomJokeComponent() called");
   const aleatorioBtn = document.getElementById('get_btn');
   aleatorioBtn.addEventListener('click', renderRandomJoke);
 };
@@ -22,7 +27,8 @@ function getJoke() {
 
   return getRandomJoke()
     .then(data => {
-      showJoke.textContent = data;
+      console.log("data:", data);
+      showJoke.innerHTML = data;
     });
 }
 

@@ -5,6 +5,10 @@
   cursor: pointer;
 } */
 
+.display__description {
+  color: red;
+}
+
 .container_Img img {
   width: 35%;
 }

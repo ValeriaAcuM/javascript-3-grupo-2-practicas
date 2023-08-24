@@ -3,10 +3,15 @@ import initColor from "./config/color.js";
 import initProduct from "./config/details.js";
 import { initRandomJokeComponent } from "./modules/randomJoke.js";
 import { initDetails } from "./modules/detailProduct.js";
+import { renderSelectJoke } from "./modules/products.js";
+/* import { jokeChange } from "./modules/randomJoke.js" */
+
 initDetails();
 initRandomJokeComponent();
 initColor();
 initProduct();
+/* jokeChange(); */
+renderSelectJoke();
 
 const init = () => {
   const getJokeBtn = document.querySelector("#get_btn");
