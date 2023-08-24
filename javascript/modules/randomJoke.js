@@ -3,9 +3,10 @@ import { Publisher } from "../publisher/publisher.js";
 
 const jokeChange = new Publisher('joke.change');
 
+
 async function renderRandomJoke() {
   const jokeData = await getRandomJoke(); 
-  const { joke } = data;
+  const { joke } = joke;
   const randomJokeElement = document.getElementById('show_joke');
   randomJokeElement.textContent = joke;
   jokeChange.publish(joke);

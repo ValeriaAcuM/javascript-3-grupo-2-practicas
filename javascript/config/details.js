@@ -1,6 +1,6 @@
 import Publisher from "./publisher.js";
 import state from "../source/default.js";
-import products from "../source/config.js";
+/* import products from "../source/config.js"; */
 
 const informationChange = new Publisher();
 
@@ -20,14 +20,13 @@ function mainImgChange(product) {
   /* const mainImageProducts = document.getElementById("mainImage");
   mainImageProducts.setAttribute("src", `../../img/product-${state.product}-${color}.jpg`); */
   const title = document.getElementById('title');
-  // title.innerHTML = products.product;
-  title.innerHTML = `${state.color} ${products.product} with joke`;
+  title.innerHTML = `${state.color} ${product} with joke`;
   const price = document.getElementById('price');
   //price.innerHTML = state.price;
   //price.innerHTML = `$ ${state.price}`;
   price.innerHTML = `${state.color} `;
 
-  products.product = product;
+  state.product = product;
 };
 
 function initProduct() {
