@@ -3,5 +3,4 @@ const state = {
   color: 'black'
 };
 
-
 export default state;

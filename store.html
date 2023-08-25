@@ -23,7 +23,7 @@
 
   <div class="container_Img">
     <img src="./img/product-shirt-black.jpg" class="main_img imgMain" id="mainImage" data-id="mainImg" alt="">
-    <p class="display__description" id="jokeVisualization">JOKE</p>
+    <p class="show_joke display__description" id="jokeVisualizationProduct">JOKE</p>
   </div>
 
   <div>
@@ -34,22 +34,17 @@
         <input data-id="white" class="white-input input-color" type="radio" name="color" value="white" /></label>
     </div>
 
-    <!-- <div class="color_select">
-    <button id="black"></button>
-    <button id="white"></button>
-  </div> -->
-
     <div class="container_InfoProduct">
       <h2 id="title">Product name</h2>
       <span id="price">$</span>
       <button id="addCartBtn">Add to cart</button>
-      <p id="renderJoke">JOKE</p>
+      <p class="show_joke" id="renderJoke">JOKE</p>
     </div>
 
     <div class="show_containerJoke">
       <h2>Choose another joke!</h2>
       <div class="show_joke" id="show_joke"></div>
-      <button id="get_btn">Get another joke!</button>
+      <button data-id="btnAnotherJoke" id="get_btn">Get another joke!</button>
     </div>
 
     <section>

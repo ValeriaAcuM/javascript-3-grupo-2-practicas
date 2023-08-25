@@ -1,12 +1,6 @@
-/* .img_cart {
-  width: 70px;
-  height: 70px;
-  margin-left: 90%;
-  cursor: pointer;
-} */
-
 .display__description {
-  color: red;
+  color: rgb(255, 0, 0);
+  margin-top: -150px;
 }
 
 .container_Img img {
@@ -15,7 +9,7 @@
 
 .color_select {
   display: flex;
-  margin-top: 1%;
+  margin-top: 8%;
   padding-left: 15%;
 }
 
@@ -51,7 +45,8 @@
 }
   
 .show_joke {
-  background-color: aliceblue;
+  background-color: white;
+  font-size: 20px;
 }
   
 button {
@@ -60,10 +55,6 @@ button {
   cursor: pointer;
   margin-top: 3%;
 }
-
-/* .products_title {
-  margin-top: 15%;
-} */
 
 .container_products {
   display: flex;

@@ -47,19 +47,4 @@ function getSearchJokes(searchInput) {
   .catch(err => console.error(err));
 }
 
-//// BY ID ////
-async function getJokeById(id) {
-  if (!id) {
-    return;
-  }
-
-  return fetch(`${apiRandomJokeURL}j/${id}`, {
-    headers: headers,
-  })
-    .then((response) => response.json())
-    .catch((error) => {
-      logErrors();
-    });
-}
-
-export { getRandomJoke, getSearchJokes, getJokeById };
+export { getRandomJoke, getSearchJokes };

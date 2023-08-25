@@ -43,6 +43,7 @@ function storage() {
     const btnRemove = document.getElementById("btnRemove");
     btnRemove.addEventListener("click", () => {
       localStorage.removeItem("myObject");
+      infoProductModal({});
     });
   });
 }

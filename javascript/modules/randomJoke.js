@@ -1,35 +1,16 @@
 import { getRandomJoke } from "../services/api.js";
-/* import { Publisher } from "../publisher/publisher.js";
-
-const jokeChange = new Publisher('joke.change');
-
-
-async function renderRandomJoke() {
-  const jokeData= await getRandomJoke(); 
-  console.log("jokeData:", jokeData);
-
-  const { joke } = jokeData;
-  console.log("joke:", joke); // SALE NULL
-
-  const randomJokeElement = document.getElementById('show_joke');
-  randomJokeElement.innerHTML = joke;
-  jokeChange.publish(joke);
-}
-
-const initRandomJokeComponent = () => {
-  console.log("initRandomJokeComponent() called");
-  const aleatorioBtn = document.getElementById('get_btn');
-  aleatorioBtn.addEventListener('click', renderRandomJoke);
-}; */
+import state from "../source/default.js";
 
 function getJoke() {
-  const showJoke = document.querySelector("#show_joke");
+  const showJoke = document.querySelectorAll(".show_joke");
 
   return getRandomJoke()
     .then(data => {
-      console.log("data:", data);
-      showJoke.innerHTML = data;
+      showJoke.forEach((p) => {
+        p.innerHTML = data;
+      });
+      state.joke = data;
     });
 }
 
-export { getJoke, /* jokeChange, initRandomJokeComponent */ }
+export { getJoke }
