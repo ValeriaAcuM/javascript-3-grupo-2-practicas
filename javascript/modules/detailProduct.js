@@ -1,4 +1,4 @@
-import { jokeChange } from './randomJoke.js'
+/* import { jokeChange } from './randomJoke.js'
 
 const initDetails = () => {
   jokeChange.subscribe(handleJokeChange);
@@ -14,4 +14,4 @@ const handleJokeChange = (data) => {
   renderJoke.innerHTML = detail;
 }
 
-export { initDetails }
+export { initDetails } */

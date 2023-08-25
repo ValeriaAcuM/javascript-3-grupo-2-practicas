@@ -1,5 +1,5 @@
 import { getRandomJoke } from "../services/api.js";
-import { Publisher } from "../publisher/publisher.js";
+/* import { Publisher } from "../publisher/publisher.js";
 
 const jokeChange = new Publisher('joke.change');
 
@@ -20,7 +20,7 @@ const initRandomJokeComponent = () => {
   console.log("initRandomJokeComponent() called");
   const aleatorioBtn = document.getElementById('get_btn');
   aleatorioBtn.addEventListener('click', renderRandomJoke);
-};
+}; */
 
 function getJoke() {
   const showJoke = document.querySelector("#show_joke");
@@ -32,4 +32,4 @@ function getJoke() {
     });
 }
 
-export { getJoke, jokeChange, initRandomJokeComponent }
+export { getJoke, /* jokeChange, initRandomJokeComponent */ }

@@ -10,13 +10,11 @@ const handleColorChange = () => {
     input.addEventListener("change", (event) => {
       const color = event.currentTarget.dataset.id;
       colorChange.publish(color);
-      console.log("color", color);
     })
 })
 };
 
 function mainImageColorChange(color) {
-  console.log("mainImageColorChange", color);
   const imgColorProducts = document.getElementById("mainImage");
   imgColorProducts.setAttribute("src", `/img/product-${state.product}-${color}.jpg`);
   const title = document.getElementById('title');

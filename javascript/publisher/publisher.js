@@ -1,4 +1,4 @@
-class Publisher {
+/* class Publisher {
     constructor(eventName) {
       this.event = eventName;
     }
@@ -12,4 +12,4 @@ class Publisher {
     }
   }
   
-  export { Publisher }
+  export { Publisher } */

@@ -1,4 +1,4 @@
-import { getJokeId } from "../utils/getParamsValues.js";
+/* import { getJokeId } from "../utils/getParamsValues.js";
 import { getJokeById } from "../services/api.js";
 
 const renderSelectJoke = async () => {
@@ -23,4 +23,4 @@ console.log("No selected joke ID");
 }
 
 
-export { renderSelectJoke }
+export { renderSelectJoke } */

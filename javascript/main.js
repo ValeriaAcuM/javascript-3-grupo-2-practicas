@@ -1,5 +1,5 @@
 import init from "./setUp.js";
-import { initRandomJokeComponent } from "../javascript/modules/randomJoke.js";
+/* import { initRandomJokeComponent } from "../javascript/modules/randomJoke.js"; */
 
-initRandomJokeComponent();
+/* initRandomJokeComponent(); */
 init();

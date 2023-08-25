@@ -1,13 +1,33 @@
-const openModalButton = document.getElementById("openModalButton");
-const closeModalButton = document.getElementById("closeModalButton");
-const updateModal = document.getElementById("updateModal");
+function modal() {
+  const openModalButton = document.getElementById("openModalButton");
+  const closeModalButton = document.getElementById("closeModalButton");
+  const updateModal = document.getElementById("updateModal");
 
-// Función para abrir el modal
-openModalButton.addEventListener("click", function () {
-  updateModal.style.display = "block"; // Mostrar el modal al hacer clic en el botón
-});
+  openModalButton.addEventListener("click", function () {
+    updateModal.style.display = "block";
+  });
 
-// Función para cerrar el modal
-closeModalButton.addEventListener("click", function () {
-  updateModal.style.display = "none"; // Ocultar el modal al hacer clic en la "x"
-});
+  closeModalButton.addEventListener("click", function () {
+    updateModal.style.display = "none";
+  });
+}
+
+function infoProductModal(state) {
+  const modalProduct = document.getElementById("productCartContainer");
+  let { image, product, price, joke } = state;
+
+  modalProduct.innerHTML = `
+<div class="modalInfo">
+  <img src="${image}" alt="">
+<h3>${product}</h3>
+<p>${price}</p>
+<p>${joke}</p>
+<button id="btnRemove" type="reset">Remove</button>
+</div>
+`;
+}
+
+export {
+  modal,
+  infoProductModal
+}
